@@ -1,707 +1,642 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Home</title>
-<link href="css/pignose.layerslider.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/bootstrap-3.1.1.min.css" rel='stylesheet' type='text/css' />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- for-mobile-apps -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Prevention Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //for-mobile-apps -->
-<!--fonts-->
-<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
-<!--//fonts-->	
-<!-- js -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<!-- js -->
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/bootstrap.min.js"></script>
-<script src="js/modernizr.custom.js"></script>
-<link rel="stylesheet" href="css/font-awesome.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/custom.css" />
-		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>		
-		<!-- js for news -->
-		<script src="js/jquery.easing.min.js"></script>
-		<script type="text/javascript" src="js/pignose.layerslider.js"></script>
-		<script type="text/javascript">
-			//<![CDATA[
-				$(window).load(function() {
-					$('#visual').pignoseLayerSlider({
-						play    : '.btn-play',
-						pause   : '.btn-pause',
-						next    : '.btn-next',
-						prev    : '.btn-prev'
-					});
-				});
-			//]]>
-			</script>
-		<!-- /js for news -->
-		
-		<!-- for smooth scrolling -->
-		<script type="text/javascript" src="js/move-top.js"></script>
-		<script type="text/javascript" src="js/easing.js"></script>
-		<script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
-				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-			});
-		});
-		</script>
-		<!-- //for smooth scrolling -->
-</head>
-<body>
-	<!-- header -->
-	<div class="top-strip">
-		<div class="container-fluid">
-			<div class="social-icons">
-				<a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
-				<a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
-				<a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a>
-				<a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
-				<a class="tumblr" href="#"><i class="fa fa-tumblr"></i></a>
-			</div>
-			<div class="contact-info">
-				<ul>
-					<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+0123 384 920</li>
-					<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info@example.com">contact@yourdomain.com</a></li>
-				</ul>
-			</div>
-			<!-- Large modal -->
-			<div class="selectpackage">
-				<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Packages</button>
-					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-						<div class="modal-dialog modal-lg">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-										&times;</button>
-									<h4 class="modal-title package-title" id="myModalLabel">
-										PREVENTIVE HEALTH CHECK UP PACKAGES</h4>
-								</div>
-								<div class="modal-body packages">
-									<div class="col-md-4 text-center modal-align">
-										<div class="package">
-											<p>A set of basic tests that can give a broad overview of your health status.</p>
-											<i class="fa fa-heartbeat"></i>
-											<h4>MASTER HEALTH CHECK</h4>
-											<a href="book-a-test.html">Book Now</a>
-										</div>
-									</div>
-									<div class="col-md-4 text-center modal-align">
-										<div class="package">
-											<p>Are you looking for a comprehensive health check that includes even Eye, Dental and ENT checks?</p>
-											<i class="fa fa-medkit"></i>
-											<h4>WHOLE BODY CHECKUP</h4>
-											<a href="book-a-test.html">Book Now</a>
-										</div>
-									</div>
-									<div class="col-md-4 text-center modal-align">
-										<div class="package">
-											<p>Do you wish to check your body out for an entire spectrum of diseases in a luxurious ambience?</p>
-											<i class="fa fa-user-md"></i>
-											<h4>HEALTH CHECK 1 AND 2</h4>
-											<a href="book-a-test.html">Book Now</a>
-										</div>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				<script>
-				$('#myModal').modal('show');
-				</script>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-	<nav class="navbar nav_bottom" role="navigation">
-	 <div class="container">
-	 <!-- Brand and toggle get grouped for better mobile display -->
-	   <div class="navbar-header nav_2">
-		  <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">Menu
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		  </button>
-		  <a class="navbar-brand" href="#"></a>
-	   </div> 
-	   <!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-			<ul class="nav navbar-nav nav_1">
-				<li class="current_page"><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li class="dropdown">
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lab<span class="caret"></span></a>
-				  <ul class="dropdown-menu drop_menu" role="menu">
-					<li><a href="laboratory.html">About Lab</a></li>
-					<li><a href="quality.html">Quality</a></li>
-					<li><a href="technologies.html">Technologies</a></li>
-					<li><a href="instruments.html">Instruments</a></li>
-				  </ul>
-				</li>
-				<li class="dropdown">
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Book Test<span class="caret"></span></a>
-				  <ul class="dropdown-menu drop_menu" role="menu">
-					<li><a href="book-a-test.html">Book a Test</a></li>
-					<li><a href="test-list.html">Test Menu</a></li>
-				  </ul>
-				</li>
-				<li class="dropdown">
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Opportunity<span class="caret"></span></a>
-				  <ul class="dropdown-menu drop_menu" role="menu">
-					<li><a href="career.html">Careers</a></li>
-					<li><a href="404.html">Franchisee</a></li>
-				  </ul>
-				</li>
-				<li class="dropdown">
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<span class="caret"></span></a>
-				  <ul class="dropdown-menu drop_menu" role="menu">
-					<li><a href="news.html">News</a></li>
-					<li><a href="faq.html">Faq</a></li>
-					<li><a href="mobile-app.html">App</a></li>
-					<li><a href="login.html">Login</a></li>
-					<li><a href="terms.html">Terms of Use</a></li>
-					<li><a href="shortcodes.html">Shortcodes</a></li>
-					<li><a href="privacy_policy.html">Privacy Policy</a></li>
-				  </ul>
-				</li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		 </div><!-- /.navbar-collapse -->
-	   </div>
-	</nav>
-	<!-- //header -->
-	<div class="demo-2">	
-		<header class="logo">
-			<h1><a class="cd-logo link link--takiri" href="index.html">Prevention <span>is better than cure.</span></a></h1>
-		</header>
-            <div id="slider" class="sl-slider-wrapper">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="webthemez">
+    <title>Home</title>
+	<!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet"> 
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico"> 
+</head> 
 
-				<div class="sl-slider">
+<body id="home">
+
+    <header id="header">
+        <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                </div>
 				
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-1"></div>
-							<h3>A bene placito.</h3>
-							<blockquote><p>You have just dined, and however scrupulously the slaughterhouse is concealed in the graceful distance of miles, there is complicity.</p><cite>Ralph Waldo Emerson</cite></blockquote>
-						</div>
-					</div>
-					
-					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-2"></div>
-							<h3>Regula aurea.</h3>
-							<blockquote><p>Until he extends the circle of his compassion to all living things, man will not himself find peace.</p><cite>Albert Schweitzer</cite></blockquote>
-						</div>
-					</div>
-					
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-3"></div>
-							<h3>Dum spiro, spero.</h3>
-							<blockquote><p>Thousands of people who say they 'love' animals sit down once or twice a day to enjoy the suffering and the terror of the abattoirs.</p><cite>Dame Jane Morris Goodall</cite></blockquote>
-						</div>
-					</div>
-					
-					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-4"></div>
-							<h3>Donna nobis pacem.</h3>
-							<blockquote><p>The human body has no more need for cows' milk than it does for dogs' milk, horses' milk, or giraffes' milk.</p><cite>Michael Klaper M.D.</cite></blockquote>
-						</div>
-					</div>
-					
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-5"></div>
-							<h3>Acta Non Verba.</h3>
-							<blockquote><p>I think if you want to eat more meat you should kill it yourself and eat it raw so that you are not blinded by the hypocrisy of having it processed for you.</p><cite>Margi Clarke</cite></blockquote>
-						</div>
-					</div>
-				</div><!-- /sl-slider -->
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="scroll active"><a href="#home">Home</a></li>  
+                        <li class="scroll"><a href="#services">Services</a></li>
+                        <li class="scroll"><a href="#about">About</a></li> 
+                        <li class="scroll"><a href="#team">Experts</a></li> 
+						 <li class="scroll"><a href="#portfolio">Gallery</a></li>
+                        <li class="scroll"><a href="#pricing">Package</a></li>
+                        <li class="scroll"><a href="#contact-us">Contact</a></li>                        
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
 
-				<nav id="nav-dots" class="nav-dots">
-					<span class="nav-dot-current"></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</nav>
+    <section id="hero-banner">
+             <div class="banner-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">                                 
+                                    <h2>Improve Your Fitness</h2>
+                                    <p>Just keep running, biking, swimming, lifting...you'll get there.</p>
+                                    <a class="btn btn-primary btn-lg" href="#pricing">Package</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section><!--/#main-slider-->
+	<section id="services" >
+        <div class="container">
 
-			</div><!-- /slider-wrapper -->
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown white">Our Services</h2>
+                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+            </div>
 
+            <div class="row">
+                <div class="features">
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-flag-o"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Weight Loss</h4>
+                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-heart-o"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Aerobic</h4>
+                                <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-send-o"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Exercises</h4>
+                                <p>Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-retweet"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Health Tips</h4>
+                                <p>Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-paper-plane-o"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Training</h4>
+                                <p>Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-bullseye"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Smart Advice</h4>
+                                <p>Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                </div>
+            </div><!--/.row-->    
+        </div><!--/.container-->
+    </section><!--/#services-->
+
+ <section id="about">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">About Us</h2>
+                
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 wow fadeInLeft">
+                  <img class="img-responsive" src="images/about.png" alt="">
+                </div>
+
+                <div class="col-sm-6 wow fadeInRight">
+                    <h3 class="column-title">Our Fitness Center</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam quis mattis quam. Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
+
+                    <p>Nulla eu neque commodo, dapibus dolor eget, dictum arcu. In nec purus eu tellus consequat ultricies. Donec feugiat tempor turpis, rutrum sagittis mi venenatis at. Sed molestie lorem a blandit congue. Ut pellentesque odio quis leo volutpat, vitae vulputate felis condimentum. </p>
+<p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+					<p>Praesent vulputate fermentum lorem, id rhoncus sem vehicula eu. Quisque ullamcorper, orci adipiscing auctor viverra, velit arcu malesuada metus, in volutpat tellus sem at justo.</p>
+
+ 
+                </div>
+            </div>
         </div>
-		<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
-		<script type="text/javascript" src="js/jquery.slitslider.js"></script>
-		<script type="text/javascript">	
-			$(function() {
-			
-				var Page = (function() {
+    </section><!--/#about-->
+ 
+   <section id="team">
+<div class="container">
+<div class="section-header">
+                <h2 class="section-title wow fadeInDown">Trained Team</h2>
+                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+            </div>			
+<div class="row" data-anim-type="fade-in-up">
 
-					var $nav = $( '#nav-dots > span' ),
-						slitslider = $( '#slider' ).slitslider( {
-							onBeforeChange : function( slide, pos ) {
+<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+<div class="team-wrapper">
+<div class="team-inner" style="background-image: url('images/team/01.jpg')">
+<a href="#" target="_blank"> <i class="fa fa-twitter"></i></a>
+</div>
+<div class="description">
+<h3> John Doe</h3>
+<h5> <strong> Founder </strong></h5>
+<p>
+Pellentesque elementum dapibus convallis.
+Vivamus eget finibus.
+</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+<div class="team-wrapper">
+<div class="team-inner" style="background-image: url('images/team/02.jpg')">
+<a href="#" target="_blank"> <i class="fa fa-twitter"></i></a>
+</div>
+<div class="description">
+<h3> Armani Krist</h3>
+<h5> <strong> Trainner </strong></h5>
+<p>
+Pellentesque elementum dapibus convallis.
+Vivamus eget finibus.
+</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+<div class="team-wrapper">
+<div class="team-inner" style="background-image: url('images/team/03.jpg')">
+<a href="#" target="_blank"> <i class="fa fa-twitter"></i></a>
+</div>
+<div class="description">
+<h3> Micellir Faeny</h3>
+<h5> <strong> Trainner </strong></h5>
+<p>
+Pellentesque elementum dapibus convallis.
+Vivamus eget finibus.
+</p>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+<div class="team-wrapper">
+<div class="team-inner" style="background-image: url('images/team/04.jpg')">
+<a href="#" target="_blank"> <i class="fa fa-twitter"></i></a>
+</div>
+<div class="description">
+<h3> Kimten Lendy</h3>
+<h5> <strong> Trainner </strong></h5>
+<p>
+Pellentesque elementum dapibus convallis.
+Vivamus eget finibus.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-								$nav.removeClass( 'nav-dot-current' );
-								$nav.eq( pos ).addClass( 'nav-dot-current' );
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Gallery</h2>
+                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+            </div>
 
-							}
-						} ),
+            <div class="text-center divhide">
+                <ul class="portfolio-filter">
+                    <li><a class="active" href="#" data-filter="*">All Works</a></li>
+                    <li><a href="#" data-filter=".designing">Designing</a></li>
+                    <li><a href="#" data-filter=".mobile">Mobile App</a></li>
+                    <li><a href="#" data-filter=".development">Development</a></li>
+                </ul><!--/#portfolio-filter-->
+            </div>
 
-						init = function() {
+            <div class="portfolio-items">
+                <div class="portfolio-item designing">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/01.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Project Name</h3>
+                            Some description..
+                            <a class="preview" href="images/portfolio/01.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
 
-							initEvents();
-							
-						},
-						initEvents = function() {
+                <div class="portfolio-item mobile development">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/02.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Project Name</h3>
+                             Some description..
+                            <a class="preview" href="images/portfolio/02.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
 
-							$nav.each( function( i ) {
-							
-								$( this ).on( 'click', function( event ) {
-									
-									var $dot = $( this );
-									
-									if( !slitslider.isActive() ) {
+                <div class="portfolio-item designing">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/03.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Project Name</h3>
+                             Some description..
+                            <a class="preview" href="images/portfolio/03.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
 
-										$nav.removeClass( 'nav-dot-current' );
-										$dot.addClass( 'nav-dot-current' );
-									
-									}
-									
-									slitslider.jump( i + 1 );
-									return false;
-								
-								} );
-								
-							} );
+                <div class="portfolio-item mobile">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/04.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Project Name</h3>
+                            Some description..
+                            <a class="preview" href="images/portfolio/04.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
 
-						};
+                <div class="portfolio-item designing development">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/05.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Project Name</h3>
+                             Some description..
+                            <a class="preview" href="images/portfolio/05.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
 
-						return { init : init };
+                <div class="portfolio-item mobile">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/06.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Project Name</h3>
+                             Some description..
+                            <a class="preview" href="images/portfolio/06.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
 
-				})();
+                <div class="portfolio-item designing development">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/07.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Project Name</h3>
+                             Some description..
+                            <a class="preview" href="images/portfolio/07.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
 
-				Page.init();
+                <div class="portfolio-item mobile">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="images/portfolio/08.jpg" alt="">
+                        <div class="portfolio-info">
+                            <h3>Project Name</h3>
+                             Some description..
+                            <a class="preview" href="images/portfolio/08.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div><!--/.portfolio-item-->
+            </div>
+        </div><!--/.container-->
+    </section><!--/#portfolio-->
 
-				/**
-				 * Notes: 
-				 * 
-				 * example how to add items:
-				 */
+   
+       <section id="business-stats">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Our Stats</h2>
+                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+            </div>
 
-				/*
-				
-				var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
-				
-				// call the plugin's add method
-				ss.add($items);
+            <div class="row text-center">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <div class="business-stats" data-digit="6850" data-duration="1000"></div>
+                        <strong>Clients</strong>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
+                        <div class="business-stats" data-digit="1465" data-duration="1000"></div>
+                        <strong>Completed</strong>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
+                        <div class="business-stats" data-digit="4325" data-duration="1000"></div>
+                        <strong>In Progress</strong>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="business-stats" data-digit="2568" data-duration="1000"></div>
+                        <strong>Revenue</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--/#business-stats-->
 
-				*/
-			
-			});
-		</script>
-		
-		<!-- banner-bottom -->
-		<div class="banner-bottom">
+    <section id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Package</h2>
+                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <ul class="pricing">
+                            <li class="plan-header">
+                                <div class="price-duration">
+                                    <span class="price">
+                                        $45
+                                    </span> 
+                                </div>
+
+                                <div class="plan-name">
+                                    Basic
+                                </div>
+                            </li>
+<li>Change oil</li>
+<li>Change oil filter</li>
+<li>tyre pressures</li>
+<li>Test brake</li>
+<li>suspension</li>
+<li>cooling system</li>
+<li>Road test</li>
+                            <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="200ms">
+                        <ul class="pricing featured">
+                            <li class="plan-header">
+                                <div class="price-duration">
+                                    <span class="price">
+                                        $85
+                                    </span> 
+                                </div>
+
+                                <div class="plan-name">
+                                    Business
+                                </div>
+                            </li>
+                           <li>Change oil</li>
+<li>Change oil filter</li>
+<li>tyre pressures</li>
+<li>Test brake</li>
+<li>suspension</li>
+<li>cooling system</li>
+<li>Road test</li>
+                            <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="400ms">
+                        <ul class="pricing">
+                            <li class="plan-header">
+                                <div class="price-duration">
+                                    <span class="price">
+                                        $125
+                                    </span> 
+                                </div>
+
+                                <div class="plan-name">
+                                    Professional
+                                </div>
+                            </li>
+                           <li>Change oil</li>
+<li>Change oil filter</li>
+<li>tyre pressures</li>
+<li>Test brake</li>
+<li>suspension</li>
+<li>cooling system</li>
+<li>Road test</li>
+                            <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="600ms">
+                        <ul class="pricing">
+                            <li class="plan-header">
+                                <div class="price-duration">
+                                    <span class="price">
+                                        $185
+                                    </span> 
+                                </div>
+
+                                <div class="plan-name">
+                                    Extended
+                                </div>
+                            </li>
+                           <li>Change oil</li>
+<li>Change oil filter</li>
+<li>tyre pressures</li>
+<li>Test brake</li>
+<li>suspension</li>
+<li>cooling system</li>
+<li>Road test</li>
+                            <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--/#pricing-->
+
+    <section class="testimonial-area" id="testimonial">
 			<div class="container">
-				<div class="col-md-4 timing">
-					<div class="opening-hours">
-						<h3><i class="fa fa-clock-o"></i>Opening Hours</h3>
-						<ul>
-							<li>Monday - Friday</li>
-							<li>9.00 AM - 8.00 PM</li>
-							<div class="clearfix"></div>
-						</ul>
-						<ul>
-							<li>Saturday</li>
-							<li>9.00 AM - 8.00 PM</li>
-							<div class="clearfix"></div>
-						</ul>
-						<ul>
-							<li>Sunday</li>
-							<li>9.30 AM - 6.00 PM</li>
-							<div class="clearfix"></div>
-						</ul>
-					</div>
-					<div class="help">
-						<h3><i class="fa fa-pencil-square-o"></i>Need Help?</h3>
-						<p>Just Make an Appointment to Get Help From Our Experts</p>
-						<a href="#" class="btn btn-default btn-default_2 pull-left" data-toggle="modal" data-target="#applyModal_1">Request an Appointment</a>
-					</div>
-				</div>
-				<div class="col-md-4 abt-img">
-					<img src="images/abt1.png" alt="doctor" title="doctor" />
-				</div>
-				<div class="col-md-4 abt-dec">
-					<h2>Ken Jeong</h2>
-					<p class="diff">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia</p>
-					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
-					
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>		
-		<!-- //banner-bottom -->
-		
-		<!-- Stats -->
-		<div class="stats">
-			<div class="container">
-				<p class="slideanim">Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.</p>
-				<div class="stats-info">
-					<div class="col-md-3 col-sm-3 stats-grid slideanim">
-						<i class="fa fa-smile-o"></i>
-						<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='18000' data-delay='.5' data-increment="50">18000</div>
-						<p class="stats-info">Happy Smiles</p>
-					</div>
-					<div class="col-md-3 col-sm-3 stats-grid slideanim">
-						<i class="fa fa-facebook"></i>
-						<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='1700' data-delay='.5' data-increment="5">1700</div>
-						<p class="stats-info">Facebook Likes</p>
-					</div>
-					<div class="col-md-3 col-sm-3 stats-grid slideanim">
-						<i class="fa fa-twitter"></i>
-						<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='21500' data-delay='.5' data-increment="20">21500</div>
-						<p class="stats-info">Twitter Followers</p>
-					</div>
-					<div class="col-md-3 col-sm-3 stats-grid slideanim">
-						<i class="fa fa-flask"></i>
-						<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='285' data-delay='.5' data-increment="1">285</div>
-						<p class="stats-info">Lorem Ipsum</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-
-			</div>
-		</div>
-		<!-- //Stats -->
-		<script type="text/javascript" src="js/numscroller-1.0.js"></script>
-		
-		<!-- tabs -->	
-		<div class="vertical-tabs">
-			<div class="container">
-				<h3 class="title text-center">What We Do</h3>
+				<div class="section-header">
+                <h2 class="section-title wow fadeInDown">Testimonial</h2>
+                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+            </div>
 				<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-8 col-xs-9 bhoechie-tab-container">
-						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bhoechie-tab-menu">
-						  <div class="list-group">
-							<a href="#" class="list-group-item active text-center">
-							    Services 1
-							</a>
-							<a href="#" class="list-group-item text-center">
-							    Services 2
-							</a>
-							<a href="#" class="list-group-item text-center">
-							    Services 3
-							</a>
-							<a href="#" class="list-group-item text-center">
-							    Services 4
-							</a>
-							<a href="#" class="list-group-item text-center">
-							    Services 5
-							</a>
-						  </div>
-						</div>
-						<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 bhoechie-tab">
-							<!-- flight section -->
-							<div class="bhoechie-tab-content active">
-								<div class="services">
-									<div class="ser-img">
-										<img src="images/ser1.jpg" title="service" alt="" />
-									</div>
-									<div class="ser-info">
-										<h3>Contrary to popular belief, Lorem Ipsum is not simply random text</h3>
-										<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 
-											1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their 
-											by English versions from the 1914 translation by H. Rackham.
-										</p>
-										<p>Sed ut perspiciatis unde omnis iste natus error sit, totam rem aperiam, eaque
-										    ipsa quae ab illo inventore dicta sunt explicabo
-										</p>
-										<a href="single.html">Read More</a>
-									</div>
-									<div class="clearfix"></div>
+					<div class="col-md-4">
+						<div class="single-testimonial animate_fade_in" style="opacity: 1; right: 0px;">
+							<div class="row">
+								<div class="col-xs-12">
+									<blockquote>Sontrary to popular belief, Lorem Ipsuis no simply random text. It has roots in a piece of classical Layears old. belief, Lorem Ipsuis not simply</blockquote>
 								</div>
 							</div>
-							<!-- train section -->
-							<div class="bhoechie-tab-content">
-								<div class="services">
-									<div class="ser-img">
-										<img src="images/ser2.jpg" title="service" alt="" />
-									</div>
-									<div class="ser-info">
-										<h3>At vero eos et accusamus et iusto dignissimos ducimus qui blanditiis</h3>
-										<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 
-											1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their 
-											by English versions from the 1914 translation by H. Rackham.
-										</p>
-										<p>Sed ut perspiciatis unde omnis iste natus error sit, totam rem aperiam, eaque
-										    ipsa quae ab illo inventore dicta sunt explicabo
-										</p>
-										<a href="single.html">Read More</a>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							</div>
-				
-							<!-- hotel search -->
-							<div class="bhoechie-tab-content">
-								<div class="services">
-									<div class="ser-img">
-										<img src="images/ser3.jpg" title="service" alt="" />
-									</div>
-									<div class="ser-info">
-										<h3>On the other hand, we denounce with righteous indignation</h3>
-										<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 
-											1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their 
-											by English versions from the 1914 translation by H. Rackham.
-										</p>
-										<p>Sed ut perspiciatis unde omnis iste natus error sit, totam rem aperiam, eaque
-										    ipsa quae ab illo inventore dicta sunt explicabo
-										</p>
-										<a href="single.html">Read More</a>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							</div>
-							<div class="bhoechie-tab-content">
-								<div class="services">
-									<div class="ser-img">
-										<img src="images/ser4.jpg" title="service" alt="" />
-									</div>
-									<div class="ser-info">
-										<h3>Laboris nisi ut aliquip ex ea commodo consequat</h3>
-										<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 
-											1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their 
-											by English versions from the 1914 translation by H. Rackham.
-										</p>
-										<p>Sed ut perspiciatis unde omnis iste natus error sit, totam rem aperiam, eaque
-										    ipsa quae ab illo inventore dicta sunt explicabo
-										</p>
-										<a href="single.html">Read More</a>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							</div>
-							<div class="bhoechie-tab-content">
-								<div class="services">
-									<div class="ser-img">
-										<img src="images/ser5.jpg" title="service" alt="" />
-									</div>
-									<div class="ser-info">
-										<h3>Temporibus autem quibusdam et aut officiis debitis</h3>
-										<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 
-											1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their 
-											by English versions from the 1914 translation by H. Rackham.
-										</p>
-										<p>Sed ut perspiciatis unde omnis iste natus error sit, totam rem aperiam, eaque
-										    ipsa quae ab illo inventore dicta sunt explicabo
-										</p>
-										<a href="single.html">Read More</a>
-									</div>
-									<div class="clearfix"></div>
+							<div class="row"> 
+								<div class="col-xs-12">
+									<h5>John Bond</h5>
+									<h6>Lorem Ipsuis simply</h6>
 								</div>
 							</div>
 						</div>
 					</div>
-			  </div>
+					<div class="col-md-4">
+						<div class="single-testimonial animate_fade_in" style="opacity: 1; right: 0px;">
+							<div class="row">
+								<div class="col-xs-12">
+									<blockquote>Tontrary to popular belief, Lorem Ipsuis no simply random text. It has roots in a piece of classical Layears old. belief, Lorem Ipsuis not simply</blockquote>
+								</div>
+							</div>
+							<div class="row"> 
+								<div class="col-xs-12">
+									<h5>John Bond</h5>
+									<h6>Lorem Ipsuis simply</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="single-testimonial animate_fade_in" style="opacity: 1; right: 0px;">
+							<div class="row">
+								<div class="col-xs-12">
+									<blockquote>Aontrary to popular belief, Lorem Ipsuis no simply random text. It has roots in a piece of classical Layears old. belief, Lorem Ipsuis not simply</blockquote>
+								</div>
+							</div>
+							<div class="row"> 
+								<div class="col-xs-12">
+									<h5>John Bond</h5>
+									<h6>Lorem Ipsuis simply</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-		<script type="text/javascript" src="js/tabs.js"></script>		
-		<!-- //tabs -->
+		</section>
+    <section id="contact-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title wow fadeInDown">Contact Us</h2>
+                <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+            </div>
+        </div>
+    </section><!--/#contact-us-->
 
-		<!-- quick links -->
-		<div class="news-section" id="news">
-			<div class="container">
-				<div class="news-section-head text-center">
-					<h3>Latest news</h3>
-					<p>Here, there and everywhere... what we've been doing</p>
-				</div>
-				<div class="news-section-grids">
-					<div class="col-md-4 news-section-grid">
-						<img src="images/n1.jpg" alt="" />
-						<div class="info">
-							<a class="news-title" href="single.html">There are sit amet</a>
-							<label>March 18</label>
-							<p>The Duchess took her choice, and was gone in a moment. 'Let's go on with the game,' the Queen said to Alice; and Alice was too much frightened to say a word, but slowly followed her back to the croquet-ground.</p>
-							<a class="more" href="single.html">Read more</a>
-						</div>
-					</div>
-					<div class="col-md-4 news-section-grid">
-						<img src="images/n2.jpg" alt="" />
-						<div class="info">
-							<a class="news-title" href="single.html">Lorem ipsum dolor</a>
-							<label>August 28</label>
-							<p>The Duchess took her choice, and was gone in a moment. 'Let's go on with the game,' the Queen said to Alice; and Alice was too much frightened to say a word, but slowly followed her back to the croquet-ground.</p>
-							<a class="more" href="single.html">Read more</a>
-						</div>
-					</div>
-					<div class="col-md-4 news-section-grid">
-						<img src="images/n3.jpg" alt="" />
-						<div class="info">
-						    <a class="news-title" href="single.html">The standard chunk</a>
-							<label>September 12</label>
-							<p>The Duchess took her choice, and was gone in a moment. 'Let's go on with the game,' the Queen said to Alice; and Alice was too much frightened to say a word, but slowly followed her back to the croquet-ground.</p>
-							<a class="more" href="single.html">Read more</a>
-						</div>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-		</div>
 
-		<!-- //quick links -->
-		
-		<!-- book an appointment -->
-		<div class="appointment">
-			<div class="container">
-				<div class="col-md-9 appointment-left">
-					<h3>FREE APPOINTMENT BOOKING</h3>
-					<p>Lorem Ipsum is simply dummy printing and typesetting industry. when an unknown printer took a galley of type and scrambled.</p>
-				</div>
-				<div class="col-md-3 appointment-right">
-					<a href="#" class="btn btn-default btn-default_2 pull-left" data-toggle="modal" data-target="#applyModal_1">book your appointment</a>
-					<div class="modal fade" id="applyModal_1" tabindex="-1" role="dialog" aria-labelledby="applyModalLabel" aria-hidden="true">
-				  	<div class="modal-dialog dialog_3">
-				    	<div class="modal-content">
-					      	<div class="modal-header">
-					        	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-					        	<h4 class="modal-title" id="myModalLabel"><div class="head_4">
-			                         <h3>Make An appointment Now</h3>
-									 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro similique ipsa deleniti doloribus fuga dicta id voluptate, excepturi nostrum cupiditate</p>
-			                        </div></h4>
-					      	</div>
-							<div class="modal-body">
-								<form name="row" method="post" class="register">
-                                    <input type="text" name="name" id="name" placeholder="Name" required="">
-                                    <input type="text" name="email id" id="Email id" placeholder="Email id" required="">
-                                    <input type="text" name="mobile number" id="Mobile Number" placeholder="Mobile Number" required="">
-									<input class="date" id="datepicker" type="text" value="Appointment date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Appointment date';}" required=>
-									<textarea type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Message...';}" required="">Enter Message...</textarea>
-									<input type="submit" onclick="myFunction()" value="Submit Now">
-								</form>
-							</div>
-							<!---start-date-piker---->
-								<link rel="stylesheet" href="css/jquery-ui.css" />
-								<script src="js/jquery-ui.js"></script>
-									<script>
-										$(function() {
-										$( "#datepicker" ).datepicker();
-										});
-									</script>
-							<!---/End-date-piker---->
-                     </div>
-		         </div>
-		     </div>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-		<!-- //book an appointment -->
-		
-		<!-- news letter -->
-		<div class="subscribe text-center">
-			<div class="container">
-				<h3>Subscribe to Our Newsletter</h3>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.</p>
-				<form>
-					<input placeholder="Email Address" class="user" type="text" required="">
-					<input type="submit" value="Subscribe">
-				</form>
-				<p class="spam">We never share your information or use it to spam you</p>
-			</div>
-		</div>
-		<!-- //news letter -->
-		
-		<!-- footer -->
-		<footer>
-			<div class="footer-grids">
-				<div class="container">
-					<div class="col-md-3 footer one">
-						<h3>About Company</h3>
-						<p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of Latin at Hampden-Sydney College in Virginia from a Lorem Ipsum passage, undoubtable source.</p>
-						<p class="adam">- Patrick Victoria, CEO</p>
-						<div class="clear"></div>
-					</div>
-					<div class="col-md-3 footer one tweet">
-						<h3>Tweets</h3>
-						<ul>
-							<li>
-								<a href="#">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus.
-								<i>http//example.com</i></a>
-								<span>About 15 minutes ago<span>
-							</span></span></li>
-							<li>
-								<a href="#"> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit. 
-								<i>http//example.com</i></a>
-								<span>About a day ago<span>
-							</span></span></li>
-						</ul>
-					</div>
-					<div class="col-md-3 footer two">
-						<h3>Keep Connected</h3>
-						<ul>
-							<li><a class="fb" href="#"><i class="fa fa-facebook"></i>Like us on Facebook</a></li>
-							<li><a class="fb1" href="#"><i class="fa fa-twitter"></i>Follow us on Twitter</a></li>
-							<li><a class="fb2" href="#"><i class="fa fa-google-plus"></i>Add us on Google Plus</a></li>
-							<li><a class="fb3" href="#"><i class="fa fa-dribbble"></i>Follow us on Dribbble</a></li>
-							<li><a class="fb4" href="#"><i class="fa fa-pinterest-p"></i>Follow us on Pinterest</a></li>
-						</ul>
-					</div>
-					<div class="col-md-3 footer three">
-						<h3>Contact Information</h3>
-						<ul>
-							<li><i class="fa fa-map-marker"></i><p>The company name <span>Lorem ipsum dolor,</span>Glasglow Dr 40 Fe 72. </p><div class="clearfix"></div> </li>
-							<li><i class="fa fa-phone"></i><p>1234567890</p> <div class="clearfix"></div> </li>
-							<li><i class="fa fa-envelope-o"></i><a href="mailto:info@example.com">contact@example.com</a> <div class="clearfix"></div></li>
-						</ul>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-			<!-- maps -->
-			<div class="copy-right-grids">
-				<div class="container">
-					<div class="copy-left">
-							<p class="footer-gd">Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
-					</div>
-					<div class="footer-links">
-						<ul>
-							<li><a href="sitemap.html">Sitemap</a></li>
-							<li><a href="privacy_policy.html">Privacy Policy</a></li>
-							<li><a href="terms.html">Terms of Use</a></li>
-						</ul>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-			
-		</footer>
-		<!-- //footer -->
-		<script type="text/javascript">
-						$(document).ready(function() {
-							/*
-							var defaults = {
-					  			containerID: 'toTop', // fading element id
-								containerHoverID: 'toTopHover', // fading element hover id
-								scrollSpeed: 1200,
-								easingType: 'linear' 
-					 		};
-							*/
-							
-							$().UItoTop({ easingType: 'easeOutQuart' });
-							
-						});
-					</script>
-				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    <section id="contact">
+        
+        <div class="container">
+            <div class="container contact-info">
+                <div class="row">
+				  <div class="col-sm-4 col-md-4">
+                        <div class="contact-form">
+                            <h3>Contact Info</h3>
+
+                            <address>
+                              <strong>Champ Fitness, Inc.</strong><br>
+                              12345 NewYork, Street 125<br>
+                              United States 94107<br>
+                              <abbr title="Phone">P:</abbr> (123) 456-7890
+                            </address>
+					</div></div>
+                    <div class="col-sm-8 col-md-8">
+                        <div class="contact-form">
+                       
+                            <form id="main-contact-form" name="contact-form" method="post" action="#">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" placeholder="Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" class="form-control" rows="8" placeholder="Message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+   </section><!--/#bottom-->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></div>
+                <div class="col-sm-6">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/mousescroll.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom-scripts.js"></script>
 </body>
 </html>
