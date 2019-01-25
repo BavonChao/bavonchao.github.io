@@ -26,6 +26,7 @@ $.ajaxSetup({
     beforeSend: function (xhr, settings) {
         if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
             xhr.setRequestHeader("X-CSRFToken", csrftoken);
+            xhr.setRequestHeader('Content-Type', 'text/plain charset=UTF-8');
             xhr.withCredentials = true;
         }
     }
