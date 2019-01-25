@@ -58,7 +58,10 @@ $(document).ready(function () {
             type: "POST",
             contentType: "application/json",
             data: data,
-            headers: {"X-CSRFtoken": csrfmiddlewaretoken},
+            headers: {
+                "X-CSRFtoken": csrfmiddlewaretoken,
+                'Content-Type': 'text/plain charset=UTF-8',
+            },
             xhrFields: {
                 withCredentials: true
             },
