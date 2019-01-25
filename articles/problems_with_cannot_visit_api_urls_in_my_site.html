@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在建造这个网站时踩到的坑和解决办法</title>
+</head>
+<body>
+    <h1>在建造这个网站时踩到的坑和解决办法</h1>
+    <h2>－－前后端分离时csrftoken的使用和视图访问权限</h2>
+    <h3>在建在这个网站时，为了减小服务器的压力，设计思想是前后端分离，为此我定义了两个接口，用于生成页面内的动态内容，但是在上线之后发现并不能正常工作，以下便是问题的解析和处理办法。</h3>
+    <h3>一、ModelViewSet的访问权限问题</h3>
+    <p>因为文章列表功能使用的是“ModelViewSet”，在最初设计的时候没有指定访问权限，<br>
+             <hr>
+            class ArticleViewSet(ModelViewSet):<br>
+                '''文章REST接口'''<br>
+                queryset = Article.objects.all().order_by("-id")<br>
+                serializer_class = ArtlcleSerializer<br>
+                ＃ permission_classes = (AllowAny,)<br>
+                def get(self):<br>
+                    return self.queryset<br>
+             <hr>
+            访问的文章列表时候DRF拒绝提供数据，在最初开发的时候我使用同一个浏览器登录过管理后台，后来在调BUG的时候，就没能发现这个问题。在测试的时候发现Firefox 被服务器拒绝访问，还一直以为是其他的什么问题。
+            这个问题解决起来十分简单，将上面代码注释掉的一行取消注释就可以了。</p>
+    <h3>二、浏览器无法获取cookie的问题</h3>
+    <p>
+            因为是前后端分离设计，在浏览器发起请求的时候，从头到尾浏览器都没有从服务器软件（uWSGI）获取过一个页面，一直是nginx充当静态文件服务器，这就导致了浏览器一直到向服务器发起ajax请求的时候都没有cookie。在Django中，默认开启了csrf，而且csrf实现依赖cookie，这就导致ajax请求被Django拒绝，而且没法通过表单中添加{{ csrf_token }}的途径解决该问题。
+            此时我遍稽群籍发现了Django官方给我们提供的方法<br>
+            使用@ensure_csrf_cookie装饰器<br>
+            具体来说，可以定义一个视图函数，加上以上装饰器，并且在访问页面的时候访问刚刚定义的视图，比如写一个js在页面加载的时候执行<br>
+             <hr>
+            //步骤一:创建异步对象<br>
+            var ajax = new XMLHttpRequest();<br>
+            //步骤二:设置请求的url参数,参数一是请求的类型,参数二是请求的url,可以带参数,动态的传递参数starName到服务端<br>
+            ajax.open('get','此处写你刚定义的视图');<br>
+            //步骤三:发送请求<br>
+            ajax.send();<br>
+            //步骤四:注册事件 onreadystatechange 状态改变就会调用<br>
+            ajax.onreadystatechange = function () {<br>
+               if (ajax.readyState==4 &&ajax.status==200) {<br>
+                //步骤五 如果能够进到这个判断 说明 数据 完美的回来了,并且请求的页面是存在的<br>
+                console.log(ajax.responseText);//输入相应的内容<br>
+                }<br>
+            };<br>
+             <hr>
+            刚刚写的视图可以什么也不干，就返回一个没有用的信息，比如告诉前端说cookie返回给你了，这个时候，浏览器会自动设定一个cookie，包含后端生成的csrftoken。<br>
+            在使用ajax访问后端的时候，带上刚刚设定的cookie就可以完成访问。<br>
+            <hr>
+            // using jQuery<br>
+            function getCookie(name) {<br>
+                var cookieValue = null;<br>
+                if (document.cookie && document.cookie !== '') {<br>
+                    var cookies = document.cookie.split(';');<br>
+                    for (var i = 0; i &lt; cookies.length; i++) {<br>
+                        var cookie = jQuery.trim(cookies[i]);<br>
+                        // Does this cookie string begin with the name we want?<br>
+                        if (cookie.substring(0, name.length + 1) === (name + '=')) {<br>
+                            cookieValue = decodeURIComponent(cookie.substring(name.length + 1));<br>
+                            break;<br>
+                        }<br>
+                    }<br>
+                }<br>
+                return cookieValue;<br>
+            }<br>
+            <br>
+            var csrftoken = getCookie('csrf_token');<br>
+            <br>
+            function csrfSafeMethod(method) {<br>
+                // these HTTP methods do not require CSRF protection<br>
+                return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));<br>
+            }<br>
+            <br>
+            $.ajaxSetup({<br>
+                beforeSend: function (xhr, settings) {<br>
+                    if (!csrfSafeMethod(settings.type) && !this.crossDomain) {<br>
+                        xhr.setRequestHeader("X-CSRFToken", csrftoken);<br>
+                        xhr.withCredentials = true;<br>
+                    }<br>
+                }<br>
+            });<br>
+            <br>
+            好了，这就是本文全部内容，如果有谬误，希望指正，首页底部有留言功能。闻道有先后，术业有专攻。我们可以相互学习，共同进步。<br>
+    </p>
+</body>
+</html>

@@ -1,288 +1,658 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <title>Home</title>
+  <head>
+    <title>赵庆华部落格</title>
     <meta charset="utf-8">
-    <meta name="format-detection" content="telephone=no"/>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/grid.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/camera.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.css">
 
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
 
-    <!--[if lt IE 9]>
-    <html class="lt-ie9">
-    <div style=' clear: both; text-align:center; position: relative;'>
-        <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
-            <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
-                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
-        </a> 
-    </div>
-    <script src="js/html5shiv.js"></script>
-    <![endif]-->
- 
-    <script src='js/device.min.js'></script> 
-</head>
+    
+  </head>
+  <body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+  
 
-<body>
-<div class="page">
-    <!--========================================================
-                              HEADER
-    =========================================================-->
-    <header>
+   
+    <nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light" id="pb-navbar">
 
-        <div class="camera_container">
-            <div id="camera" class="camera_wrap">
-                <div data-thumb="images/slide01_thumb.jpg" data-src="images/slide01.jpg">
-                    <div class="camera_caption fadeIn">
-                    </div>
-                </div>
-                <div data-thumb="images/slide02_thumb.jpg" data-src="images/slide02.jpg">
-                    <div class="camera_caption fadeIn">
-                    </div>
-                </div>
-                <div data-thumb="images/slide03_thumb.jpg" data-src="images/slide03.jpg">
-                    <div class="camera_caption fadeIn">
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="brand wow fadeIn">
-                <h1 class="brand_name">
-                    <a href="./">Cafe</a>
-                </h1>
-            </div>
+        <a class="navbar-brand" href="index.html">赵庆华</a>
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#section-home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section-about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section-services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section-portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section-resume">Resume</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section-blog">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section-contact">Contact</a></li>
+          </ul>
         </div>
-        
-        <div class="toggle-menu-container">
-            <nav class="nav">
-                <div class="nav_title"></div>
-                <a class="sf-menu-toggle fa fa-bars" href="#"></a>
-                <ul class="sf-menu">
-                    <li class="active">
-                        <a href="./">Home</a>
-                    </li>
-                    <li>
-                        <a href="index-1.html">About</a>
-                        <ul>
-                            <li>
-                                <a href="#">Quisque nulla</a>
-                            </li>
-                            <li>
-                                <a href="#">Vestibulum libero</a>
-                                <ul>
-                                    <li>
-                                        <a href="#">Lorem</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Dolor</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Sit amet</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Vivamus eget nibh</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="index-2.html">What We Do</a>
-                    </li>
-                    <li>
-                        <a href="index-3.html">Menu</a>
-                    </li>
-                    <li>
-                        <a href="index-4.html">Contacts</a>
-                    </li>
-                </ul>
-            </nav>            
+      </div>
+    </nav>
+    
+
+   
+    
+    <section class="site-hero" style="background-image: url(images/image_1.jpg);" id="section-home" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row intro-text align-items-center justify-content-center">
+          <div class="col-md-10 text-center">
+            <h1 class="site-heading site-animate">你好，我是　<strong>赵庆华</strong></h1>
+            <p class="lead site-subheading mb-4 site-animate">稍微懂一点Python、经济学和社会学的软件工程师</p>
+            <p><a href="#section-about" class="smoothscroll btn btn-primary px-4 py-3">More about Me</a></p>
+          </div>
+        </div>
+      </div>
+    </section> <!-- section -->
+
+  
+    <section class="site-section" id="section-about">
+      <div class="container">
+        <div class="row mb-5 align-items-center">
+          <div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0">
+            <img src="images/pic.jpg" alt="Image placeholder" class="img-fluid">
+          </div>
+          <div class="col-lg-5 pl-lg-5">
+            <div class="section-heading">
+              <h2>有关　<strong>我</strong></h2>
+            </div>
+            <p class="lead">我，赵庆华，字檖山，1996年生于辽宁，本科在福建师范大学经济学院管理学系就读，主修市场营销</p>
+            <p class="mb-5  ">热爱计算机和经济学，读过《全球通史》、《Python基础教程》，正在读《流畅的Python》、《Python核心编程》、《资治通鉴》，两耳不闻窗外事，一心只读圣贤书？NAY.我还喜欢看BBC、纽约时报、FT和路透社等媒体的文章，也喜欢看Ｂ站的鬼畜🤣🤣🤣</p>
+
+            <p>
+              <a href="#section-contact" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">连络我</a>
+              <a href="BavonChaoCV.pdf" class="btn btn-secondary px-4 py-2 btn-sm">下载我的简历</a>
+            </p>
+          </div>
         </div>
 
-    </header>
-    <!--========================================================
-                              CONTENT
-    =========================================================-->
-    <main>
-        <section class="well">
-            <div class="container">
-                <h2><em>Welcome</em>to Our Place</h2>
-                <div class="row">
-                    <div class="grid_6">
-                        <div class="img img__border"><div class="lazy-img" style="padding-bottom: 63.0282%;"><img data-src="images/page-1_img01.jpg" alt=""></div></div>
-                        <p class="center indents-1">Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla.</p>
-                    </div>
-                    <div class="grid_6">
-                        <div class="img img__border"><div class="lazy-img" style="padding-bottom: 63.0282%;"><img data-src="images/page-1_img02.jpg" alt=""></div></div>
-                        <p class="center indents-1">Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla.</p>
-                    </div>
-                </div>
-                <div class="decoration"><a href="#" class="btn">Read more</a></div>
-                <h2><em>Our</em>Cuisine</h2>
-            </div>            
-            <div class="gallery">
-                <div class="gallery_col-1">
-                    <a data-fancybox-group="gallery" href="images/page-1_img03_original.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 93.96551724137931%;">
-                        <img data-src="images/page-1_img03.jpg" alt="">
-                        <div class="gallery_overlay">
-                            <div class="gallery_caption">
-                                <p><em>Lorem Blandit</em></p>
-                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a data-fancybox-group="gallery" href="images/page-1_img04_original.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 74.13793103448276%;">
-                        <img data-src="images/page-1_img04.jpg" alt="">
-                        <div class="gallery_overlay">
-                            <div class="gallery_caption">
-                                <p><em>Lorem Blandit</em></p>
-                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a data-fancybox-group="gallery" href="images/page-1_img05_original.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 94.6551724137931%;">
-                        <img data-src="images/page-1_img05.jpg" alt="">
-                        <div class="gallery_overlay">
-                            <div class="gallery_caption">
-                                <p><em>Lorem Blandit</em></p>
-                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="gallery_col-2">
-                    <a data-fancybox-group="gallery" href="images/page-1_img06_original.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 52.48322147651007%;">
-                        <img data-src="images/page-1_img06.jpg" alt="">
-                        <div class="gallery_overlay">
-                            <div class="gallery_caption">
-                                <p><em>Lorem Blandit</em></p>
-                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a data-fancybox-group="gallery" href="images/page-1_img07_original.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 55.97315436241611%;">
-                        <img data-src="images/page-1_img07.jpg" alt="">
-                        <div class="gallery_overlay">
-                            <div class="gallery_caption">
-                                <p><em>Lorem Blandit</em></p>
-                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a data-fancybox-group="gallery" href="images/page-1_img08_original.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 96.10738255033557%;">
-                        <img data-src="images/page-1_img08.jpg" alt="">
-                        <div class="gallery_overlay">
-                            <div class="gallery_caption">
-                                <p><em>Lorem Blandit</em></p>
-                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="gallery_col-3">
-                    <a data-fancybox-group="gallery" href="images/page-1_img09_original.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 93.69676320272572%;">
-                        <img data-src="images/page-1_img09.jpg" alt="">
-                        <div class="gallery_overlay">
-                            <div class="gallery_caption">
-                                <p><em>Lorem Blandit</em></p>
-                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a data-fancybox-group="gallery" href="images/page-1_img10_original.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 72.23168654173765%;">
-                        <img data-src="images/page-1_img10.jpg" alt="">
-                        <div class="gallery_overlay">
-                            <div class="gallery_caption">
-                                <p><em>Lorem Blandit</em></p>
-                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a data-fancybox-group="gallery" href="images/page-1_img11_original.jpg" class="gallery_item thumb lazy-img" style="padding-bottom: 93.69676320272572%;">
-                        <img data-src="images/page-1_img11.jpg" alt="">
-                        <div class="gallery_overlay">
-                            <div class="gallery_caption">
-                                <p><em>Lorem Blandit</em></p>
-                                <p>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+        <div class="row pt-5">
+          <div class="col-md-3 mb-3">
+            <div class="section-heading">
+              <h2>我都　<strong>会点啥</strong></h2>
             </div>
-        </section>
-        <section class="parallax parallax1" data-parallax-speed="-0.4">
-            <div class="container">
-                <h2><em>Our </em>Experience</h2>
-                <p class="indents-2">Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci </p>
-                <a href="#" class="btn">View full menu</a>
-            </div>
-        </section>
-        <section class="well well__offset-1 bg-1">
-            <div class="container">
-                <h2><em>Our </em>Cooks</h2>
-                <div class="row row__offset-1">
-                    <div class="grid_4">
-                        <figure>
-                            <div class="img lazy-img" style="padding-bottom: 101.0810810810811%;"><img data-src="images/page-1_img12.jpg" alt=""></div>
-                            <figcaption>Kevin Grey</figcaption>
-                        </figure>
-                        <h3>Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl </h3>
-                        <p>Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla.</p>
-                    </div>
-                    <div class="grid_4">
-                        <figure>
-                            <div class="img lazy-img" style="padding-bottom: 101.0810810810811%;"><img data-src="images/page-1_img13.jpg" alt=""></div>
-                            <figcaption>Linda Klein</figcaption>
-                        </figure>
-                        <h3>Oeteger convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl </h3>
-                        <p>Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla.</p>
-                    </div>
-                    <div class="grid_4">
-                        <figure>
-                            <div class="img lazy-img" style="padding-bottom: 101.0810810810811%;"><img data-src="images/page-1_img14.jpg" alt=""></div>
-                            <figcaption>Ann Shelton</figcaption>
-                        </figure>
-                        <h3>Koteger convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl </h3>
-                        <p>Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla.</p>
-                    </div>
+          </div>
+          <div class="col-md-9">
+            <div class="skill">
+              <h3>Python</h3>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                  <span>海星</span>
                 </div>
-                <div class="decoration"><a href="#" class="btn">Read more</a></div>
+              </div>
             </div>
-        </section>
-        <section class="well well__offset-2">
-            <div class="container center">
-                <h2><em>Make </em>a Reservation</h2>
-                <p class="indents-2">Fnteger convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol. sed,pharetra venenatis nulla. Vestibulum volutpat turpis ut massa commodo, quis aliquam massa facilisis.Integer convallis orci vel mi nelaoreet, at ornare lorem consequat. Phasellus era nisl auctor vel veliterol.</p>
-                <address class="address-1">
-                    <dl><dt>Address:</dt> <dd>4578 Marmora Road, Glasgow DA04 89GR</dd></dl>
-                    <p><em>800 2345-6789</em></p>
-                </address>
-            </div>
-        </section>
-    </main>
 
-    <!--========================================================
-                              FOOTER
-    =========================================================-->
-    <footer>
-        <div class="container">
-            <ul class="socials">
-                <li><a href="#" class="fa fa-facebook"></a></li>
-                <li><a href="#" class="fa fa-tumblr"></a></li>
-                <li><a href="#" class="fa fa-google-plus"></a></li>
+            <div class="skill">
+              <h3>Django</h3>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
+                  <span>小学生</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <h3>HTML</h3>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100">
+                  <span>很一般</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <h3>Linux</h3>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+                  <span>会玩</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <h3>搞机</h3>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
+                  <span>哈，大学四年电脑不是白修的</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="site-section bg-light">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-12">
+            <div class="section-heading text-center">
+              <h2>我的 <strong>哲学</strong></h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+
+              <div class="block-47 d-flex mb-5">
+                <div class="block-47-image">
+                  <img src="images/person1.jpg" alt="Image placeholder" class="img-fluid">
+                </div>
+                <blockquote class="block-47-quote">
+                  <p>不止于能用，竭力追求好用，我所提供的最好的版本永远是下一个版本，给予客户力所能及最好的使用体验</p>
+                  <cite class="block-47-quote-author">&mdash; 极客精神 <a href="#">　</a></cite>
+                </blockquote>
+              </div>
+
+          </div>
+          <div class="col-md-6">
+            
+            <div class="block-47 d-flex mb-5">
+                <div class="block-47-image">
+                  <img src="images/person2.jpg" alt="Image placeholder" class="img-fluid">
+                </div>
+                <blockquote class="block-47-quote">
+                  <p>只有不学习的人才认为自己比别人有学识，山外青山，楼外青楼</p>
+                  <cite class="block-47-quote-author">&mdash; 谦受益，满招损 <a href="#">　</a></cite>
+                </blockquote>
+              </div>
+
+          </div>
+
+          <div class="col-md-6">
+            
+              <div class="block-47 d-flex mb-5">
+                <div class="block-47-image">
+                  <img src="images/person3.jpg" alt="Image placeholder" class="img-fluid">
+                </div>
+                <blockquote class="block-47-quote">
+                  <p>最盲目的服从乃是奴隶们所仅存的唯一美德。</p>
+                  <cite class="block-47-quote-author">&mdash; 不盲从 <a href="#">　卢梭</a></cite>
+                </blockquote>
+              </div>
+
+          </div>
+          <div class="col-md-6">
+            
+            <div class="block-47 d-flex mb-5">
+                <div class="block-47-image">
+                  <img src="images/person4.jpg" alt="Image placeholder" class="img-fluid">
+                </div>
+                <blockquote class="block-47-quote">
+                  <p>Beautiful is better than ugly.</p>
+                  <cite class="block-47-quote-author">&mdash; Python之禅 <a href="#">　Tim Peters(图为Python之父)</a></cite>
+                </blockquote>
+              </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="site-section border-top pb-0"  id="section-services">
+      <div class="container">
+
+        <div class="row mb-4">
+          <div class="col-md-12">
+            <div class="section-heading text-center">
+              <h2>My <strong>Services</strong></h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-md-6 col-lg-4 text-center mb-5">
+            <div class="site-service-item site-animate" data-animate-effect="fadeIn">
+              <span class="icon">
+                <span class="icon-phone3"></span>
+              </span>
+              <h3 class="mb-4">Mobile Optimize</h3>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              <p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 text-center mb-5">
+            <div class="site-service-item site-animate" data-animate-effect="fadeIn">
+              <span class="icon">
+                <span class="icon-wallet2"></span>
+              </span>
+              <h3 class="mb-4">Increase Revenue</h3>
+              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+              <p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 text-center mb-5">
+            <div class="site-service-item site-animate" data-animate-effect="fadeIn">
+              <span class="icon">
+                <span class="icon-lightbulb"></span>
+              </span>
+              <h3 class="mb-4">Intuitive Idea</h3>
+              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+              <p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 text-center mb-5">
+            <div class="site-service-item site-animate" data-animate-effect="fadeIn">
+              <span class="icon">
+                <span class="icon-phone3"></span>
+              </span>
+              <h3 class="mb-4">Mobile Optimize</h3>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              <p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 text-center mb-5">
+            <div class="site-service-item site-animate" data-animate-effect="fadeIn">
+              <span class="icon">
+                <span class="icon-wallet2"></span>
+              </span>
+              <h3 class="mb-4">Increase Revenue</h3>
+              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+              <p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 text-center mb-5">
+            <div class="site-service-item site-animate" data-animate-effect="fadeIn">
+              <span class="icon">
+                <span class="icon-lightbulb"></span>
+              </span>
+              <h3 class="mb-4">Intuitive Idea</h3>
+              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+              <p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <div class="tlinks">Collect from <a href="http://www.cssmoban.com/" title="网站模板">网站模板</a></div>
+
+    <section class="site-section" id="section-features">
+      <div class="container">
+        <div class="row site-section">
+          <div class="col-md-8">
+            <p><img src="images/laptop_1.jpg" alt="" class="img-fluid"></p>
+          </div>
+          <div class="col-md-4">
+            <h3 class="mb-3">Big Benefits for Small Business</h3>
+            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+
+            <ul class="site-list">
+              <li class="site-check">Pointing has no control</li>
+              <li class="site-check">A small river named Duden flows</li>
+              <li class="site-check">Roasted parts of sentences fly into your mouth</li>
             </ul>
-            <div class="copyright">© <span id="copyright-year"></span> |
-                <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-8 order-md-2">
+            <p><img src="images/laptop_1.jpg" alt="" class="img-fluid"></p>
+          </div>
+          <div class="col-md-4 order-md-1">
+            <h3 class="mb-3">All in One Place</h3>
+            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+
+            <ul class="site-list">
+              <li class="site-check">Pointing has no control</li>
+              <li class="site-check">A small river named Duden flows</li>
+              <li class="site-check">Roasted parts of sentences fly into your mouth</li>
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+    
+
+    <section class="site-section" id="section-portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="section-heading text-center col-md-12">
+              <h2>Featured <strong>Portfolio</strong></h2>
             </div>
         </div>
-        <div class="tm"><a href="#"><img src="images/TM_logo.png" alt=""></a></div>
-    </footer>
-</div>
+        <div class="filters">
+                        <ul>
+                            <li class="active" data-filter="*">All</li>
+                            <li data-filter=".packaging">Packaging</li>
+                            <li data-filter=".mockup">Mockup</li>
+                            <li data-filter=".typography">Typography</li>
+                            <li data-filter=".photography">Photography</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="filters-content">
+                        <div class="row grid">
+                            <div class="single-portfolio col-sm-4 all mockup">
+                              <div class="relative">
+                                <div class="thumb">
+                                  <div class="overlay overlay-bg"></div>
+                                   <img class="image img-fluid" src="images/p1.jpg" alt="">
+                                </div>
+                  <a href="images/p1.jpg" class="img-pop-up">  
+                    <div class="middle">
+                      <div class="text align-self-center d-flex"><img src="#" alt=""></div>
+                    </div>
+                </a>                                  
+                              </div>
+                <div class="p-inner">
+                    <h4>Square Box Mockup</h4>
+                  <div class="cat">Mockup</div>
+                </div>                                         
+                            </div>
+                            <div class="single-portfolio col-sm-4 all mockup">
+                              <div class="relative">
+                                <div class="thumb">
+                                  <div class="overlay overlay-bg"></div>
+                                   <img class="image img-fluid" src="images/p2.jpg" alt="">
+                                </div>
+                  <a href="images/p2.jpg" class="img-pop-up">  
+                    <div class="middle">
+                      <div class="text align-self-center d-flex"><img src="#" alt=""></div>
+                    </div>
+                </a>                                  
+                              </div>
+                <div class="p-inner">
+                    <h4>Product Box Package Mockup</h4>
+                  <div class="cat">Mockup</div>
+                </div>                                         
+                            </div>                            
+                            <div class="single-portfolio col-sm-4 all packaging">
+                              <div class="relative">
+                                <div class="thumb">
+                                  <div class="overlay overlay-bg"></div>
+                                   <img class="image img-fluid" src="images/p3.jpg" alt="">
+                                </div>
+                  <a href="images/p3.jpg" class="img-pop-up">  
+                    <div class="middle">
+                      <div class="text align-self-center d-flex"><img src="#" alt=""></div>
+                    </div>
+                  </a> 
+                                  
+                              </div>
+                                <div class="p-inner">
+                                    <h4>Creative Package Design</h4>
+                                    <div class="cat">Packaging</div>
+                                </div>
+                            </div>
+                            <div class="single-portfolio col-sm-4 all packaging">
+                              <div class="relative">
+                                <div class="thumb">
+                                  <div class="overlay overlay-bg"></div>
+                                   <img class="image img-fluid" src="images/p4.jpg" alt="">
+                                </div>
+                  <a href="images/p4.jpg" class="img-pop-up">  
+                    <div class="middle">
+                      <div class="text align-self-center d-flex"><img src="#" alt=""></div>
+                    </div>
+                  </a>                                
+                              </div> 
+                                <div class="p-inner">
+                                    <h4>Packaging Brand</h4>
+                                    <div class="cat">Packaging</div>
+                                </div>
+                            </div>
+                            <div class="single-portfolio col-sm-4 all typography">
+                              <div class="relative">
+                              <div class="thumb">
+                                  <div class="overlay overlay-bg"></div>
+                                   <img class="image img-fluid" src="images/p5.jpg" alt="">
+                                </div>
+                  <a href="images/p5.jpg" class="img-pop-up">  
+                    <div class="middle">
+                      <div class="text align-self-center d-flex"><img src="#" alt=""></div>
+                    </div>
+                  </a>                                
+                              </div>
+                                <div class="p-inner">
+                                    <h4>Isometric 3D Extrusion</h4>
+                                    <div class="cat">Typography</div>
+                                </div>
+                            </div>
+                            <div class="single-portfolio col-sm-4 all photography">
+                              <div class="relative">
+                                <div class="thumb">
+                                  <div class="overlay overlay-bg"></div>
+                                   <img class="image img-fluid" src="images/p6.jpg" alt="">
+                                </div>
+                  <a href="images/p6.jpg" class="img-pop-up">  
+                    <div class="middle">
+                      <div class="text align-self-center d-flex"><img src="#" alt=""></div>
+                    </div>
+                  </a>                                
+                              </div>
+                                <div class="p-inner">
+                                    <h4>White Space Photography</h4>
+                                    <div class="cat">photography</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+      </div>
+    </section>
+    <!-- .section -->
 
-<script src="js/script.js"></script>
-</body>
+    <section class="site-section bg-light " id="section-resume">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-5">
+            <div class="section-heading text-center">
+              <h2>我的 <strong> 履历</strong></h2>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h2 class="mb-5">教育背景</h2>
+            <div class="resume-item mb-4">
+              <span class="date"><span class="icon-calendar"></span> 2014-09　福州</span>
+              <h3>管理学学士</h3>
+              <p>经济学院管理学系市场营销专业（后来经过学院调整本专业改变方向），学习课程包括管理学、财务、营销等方面</p>
+              <p>在学校期间参与过大型社团建设和管理，在帮助同学修电脑的过程中，赢得良好口碑</p>
+              <span class="school">福建师范大学</span>
+            </div>
+
+
+
+          </div>
+          <div class="col-md-6">
+            
+
+            <h2 class="mb-5">工作经历</h2>
+
+            <div class="resume-item mb-4">
+              <span class="date"><span class="icon-calendar"></span> 2017-12 福州</span>
+              <h3>项目专员</h3>
+              <p>负责腾讯“智慧社区”项目在福州的落地工作，期间负责过谈判、培训、地推等工作</p>
+              <span class="school">福建创杰</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section> <!-- .section -->
+
+    <section class="site-section" id="section-blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-5">
+            <div class="section-heading text-center">
+              <h2>本站 <strong>文章</strong></h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" id="articles">
+          <div id="article_error_msg" style="display: none" class="section-heading text-center">文章列表不见了</div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="blog-entry">
+              <a href="#"><img src="images/post_1.jpg" alt="Image placeholder" class="img-fluid"></a>
+              <div class="blog-entry-text">
+                <h3><a href="#">以后会有的，在这里占个位置先</a></h3>
+                <p class="mb-4">以后文章内容概述就放这</p>
+
+                <div class="meta">
+                  <a href="#"><span class="icon-calendar"></span> 2019-01-14</a>
+                  <a href="#"><span class="icon-bubble"></span> 哪来的人给我评论啊 </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="blog-entry">
+              <a href="#"><img src="images/post_2.jpg" alt="Image placeholder" class="img-fluid"></a>
+              <div class="blog-entry-text">
+                <h3><a href="#">Creative Product Designer From Facebook</a></h3>
+                <p class="mb-4">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+
+                <div class="meta">
+                  <a href="#"><span class="icon-calendar"></span> Aug 7, 2018</a>
+                  <a href="#"><span class="icon-bubble"></span> 5 Comments</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="blog-entry">
+              <a href="#"><img src="images/post_3.jpg" alt="Image placeholder" class="img-fluid"></a>
+              <div class="blog-entry-text">
+                <h3><a href="#">Creative Product Designer From Facebook</a></h3>
+                <p class="mb-4">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+
+                <div class="meta">
+                  <a href="#"><span class="icon-calendar"></span> Aug 7, 2018</a>
+                  <a href="#"><span class="icon-bubble"></span> 5 Comments</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="site-section bg-light" id="section-contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-5">
+            <div class="section-heading text-center">
+              <h2>这个家伙 <strong>有点</strong> 意思？</h2>
+            </div>
+          </div>
+          
+          <div class="col-md-7 mb-5 mb-md-0">
+            <form action="/comment/" class="site-form" method="post" id="comment_form">
+              <h3 class="mb-5">留言给我</h3>
+                <input type="hidden" name="csrfmiddlewaretoken" value="" id="csrftoken">
+              <div class="form-group">
+                <input id="name" name="name" type="text" class="form-control px-3 py-4" placeholder="你的名字">
+              </div>
+              <div class="form-group">
+                <input id="email" name="email" type="email" class="form-control px-3 py-4" placeholder="你的Email">
+              </div>
+              <div class="form-group">
+                <input id="number" name="number" type="text" class="form-control px-3 py-4" placeholder="留个电话">
+              </div>
+              <div class="form-group mb-5">
+                <textarea id="content" name="content" class="form-control px-3 py-4" cols="30" rows="10" placeholder="想说点啥"></textarea>
+              </div>
+              <div class="form-group">
+                  <p class="text-uppercase" id="comment_error_msg" style="display: none">输入全部内容方可提交，或者提交遇到了错误</p>
+                <input id="submit_comment" type="submit" class="btn btn-primary  px-4 py-3" value="留言">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-5 pl-md-5">
+            <h3 class="mb-5">我的连络方式</h3>
+            <ul class="site-contact-details">
+              <li>
+                <span class="text-uppercase">微信</span>
+                chaochinghua
+              </li>
+              <li>
+                <span class="text-uppercase">QQ</span>
+                893035651
+              </li>
+              <li>
+                <span class="text-uppercase">手机号码</span>
+                  001 586 666 4111<br>
+                  这是美国的号码，记得加上“001”
+              </li>
+              <li>
+                <span class="text-uppercase">我会去哪</span>
+                大连 <br>
+                福州 <br>
+                广州 <br>
+                深圳 <br>
+                要是有通路的话，送我去日本美国欧洲我也更高兴啊
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row mb-3">
+          <div class="col-md-12 text-center">
+            <p>
+              <a href="#" class="social-item"><span class="icon-facebook2"></span></a>
+              <a href="#" class="social-item"><span class="icon-twitter"></span></a>
+              <a href="#" class="social-item"><span class="icon-instagram2"></span></a>
+              <a href="#" class="social-item"><span class="icon-linkedin2"></span></a>
+              <a href="#" class="social-item"><span class="icon-vimeo"></span></a>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+            <p class="col-12 text-center">
+            
+            Copyright &copy; <script>document.write(new Date().getFullYear());</script> - Colorlib All rights reserved
+                网页模板来自模板之家，经由赵庆华改编
+            
+            </p>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="js/host.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/popper.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    
+    <script src="js/vendor/jquery.easing.1.3.js"></script>
+    <script src="js/vendor/jquery.stellar.min.js"></script>
+    <script src="js/vendor/jquery.waypoints.min.js"></script>
+
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/comment.js"></script>
+    <script src="js/load_articles.js"></script>
+
+
+  </body>
 </html>
